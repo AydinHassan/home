@@ -6,12 +6,12 @@ const autoprefixer = require('autoprefixer')
 module.exports = {
     plugins: [
         tailwindcss('./tailwind.js'),
-        cssnano({
-            preset: 'default',
-        }),
-        purgecss({
-            content: ['./src/index.html']
-        }),
+        // cssnano({
+        //     preset: 'default',
+        // }),
+        // purgecss({
+        //     content: ['./src/index.html']
+        // }),
         autoprefixer
     ],
 }

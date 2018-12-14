@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: './src/styles.css',
+    entry: './src/index.js',
     mode: process.env.NODE_ENV,
     module: {
         rules: [
@@ -17,6 +17,24 @@ module.exports = {
                     ],
                 }),
             },
+            {
+                test: /.*\.(gif|png|jpe?g)$/i,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
+                ]
+            },
+            {
+                test: /\.(html)$/,
+                use: {
+                    loader: 'html-loader',
+                    options: {
+                        attrs: ['img:src', 'link:href']
+                    }
+                }
+            }
+
         ],
     },
     plugins: [
