@@ -6,8 +6,9 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram";
 import { faCalendarDay } from "@fortawesome/free-solid-svg-icons/faCalendarDay";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 
 config.autoAddCss = false;
 
-library.add(faTwitter, faGithub, faLinkedinIn, faInstagram, faCalendarDay);
+library.add(faTwitter, faGithub, faLinkedinIn, faInstagram, faCalendarDay, faChevronDown);
 dom.watch();

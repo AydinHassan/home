@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body class="text-grey-darkest font-light text-sm leading-medium">
-        <div class="flex flex-col md:flex-row font-sans " style="background-image: linear-gradient(60deg, #97d6ff 0%, #9599E2 100%);">
-            <div class="flex flex-col justify-between h-screen sticky pin-t px-3 pt-8 bg-red-lighter" style="width: 450px">
+        <div class="flex flex-col md:flex-row font-sans">
+            <div class="flex flex-col flex-no-shrink justify-between h-screen sticky pin-t px-3 pt-8 bg-red-lighter" style="width: 450px">
                 <div class="flex flex-col w-full items-end">
                     <div class="mt-16 text-right mr-4 text-sm font-normal text-red-darker italic">
                         <p class="mb-1"><span class="text-red-light font-semibold">Age</span> <span class="font-bold">30</span></p>
@@ -30,17 +30,17 @@
                             <i class="fab fa-instagram w-6 h-6 m-2"></i>
                         </a>
                     </div>
-                    <img class="h-32 w-32 mb-8 mr-4 shadow rounded-full" src="./me.jpg">
+                    <img class="h-32 w-32 mb-8 mr-4 shadow rounded-full " src="./me.jpg">
                 </div>
                 <!--footer-->
                 <div class="flex flex-col items-center mb-4">
                     <p class="font-normal border-b border-dashed border-blue hover:border-blue-lighter text-blue hover:text-blue-lighter italic font-semibold"><a target="_blank" class="no-underline text-blue hover:text-blue-lighter" href="https://www.upwork.com/o/profiles/users/_~010b86d1e2195061d2/">Hire me on Upwork!</a></p>
                 </div>
             </div>
-            <div class="flex">
-                <div class="flex flex-col flex-grow  max-w-sm w-full md:mb-8 pl-6 pr-3 pt-8">
+            <div class="flex flex-grow" style="background-image: linear-gradient(60deg, #97d6ff 0%, #9599E2 100%);">
+                <div class="flex flex-col flex-grow max-w-sm w-full md:mb-8 pl-6 pr-3 pt-8">
                     <h2 class="font-light uppercase text-grey-lightest text-2xl mt-3 mb-2">Achievements</h2>
-                    <div class="bg-white shadow rounded w-full p-4 my-2">
+                    <div class="bg-white w-full p-4 my-2 border-4 border-indigo-dark my-shadow">
                         <h3 class="font-semibold text-indigo-dark mb-2">Education</h3>
                         <h4>Bachelor of Science (B.S.), Forensic Computing | De Montfort University</h4>
                         <p>2008 - 2013</p>
@@ -48,12 +48,12 @@
 
                             I was awarded a 1st Class Honors & I won Final Year Student of the year award in the computer science department due to high grades throughout all my modules.</p>
                     </div>
-                    <div class="bg-white shadow rounded w-full p-4 my-2">
+                    <div class="bg-white border-4 border-indigo-dark my-shadow w-full p-4 my-2">
                         <h3 class="font-semibold text-indigo-dark mb-2">Certifications</h3>
                         <h4>Magento Certified Developer Plus</h4>
                         <p>Demonstrates skillful use of Magento Enterprise Edition and has proven knowledge of the details of the structure of Magento, which can give someone an advantage when implementing a site using Magento.</p>
                     </div>
-                    <div class="bg-white shadow rounded w-full p-4 my-2">
+                    <div class="bg-white border-4 border-indigo-dark my-shadow w-full p-4 my-2">
                         <h3 class="font-semibold text-indigo-dark mb-2">PHP School</h3>
                         <div>
                             <p>PHP School is a project created by me to help others to learn to code for free using an open source learning system.
@@ -63,7 +63,7 @@
                                 There are also enterprise opportunities available which we are investigating for consulting and helping businesses teach people how to use their tools and processes.</p>
                         </div>
                     </div>
-                    <div class="bg-white shadow rounded w-full p-4 my-2">
+                    <div class="bg-white border-4 border-indigo-dark my-shadow w-full p-4 my-2">
                         <h3 class="font-semibold text-indigo-dark mb-2">Open Source</h3>
                         <div class="flex justify-center">
                             <div class="flex flex-col flex-1">
@@ -84,32 +84,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow rounded w-full p-4 my-2">
-                        <h3 class="font-semibold text-indigo-dark mb-2">Talks</h3>
-                        <div>
-
-                        </div>
+                    <div class="bg-white border-4 border-indigo-dark my-shadow w-full p-4 my-2">
+                        <h3 class="font-semibold text-indigo-dark mb-2 uppercase">Talks & Workshops</h3>
+                        <p class="font-semibold mb-1 text-indigo-dark text-sm">Unconference talk at PHPNW, Manchester</p>
+                        <p class="font-semibold mb-4 text-grey-dark text-xs"><i class="fas fa-calendar-day mr-2 w-2 leading-tight text-grey-dark"></i>October 2016</p>
+                        <p class="mb-4 leading-loose">I gave a talk with my friend <a target="_blank" href="https://twitter.com/mikeymikemw">Michael Woodward</a> about our open source project <a target="_blank" href="https://phpschool.io/">PHP School</a>. We won best un-conference talk of the conference and were invited back to talk at PHPNW 2017 on the main stage.</p>
+                        <p class="font-semibold mb-1 text-indigo-dark text-sm">PHP School workshop at PHP Warwickshire, Coventry</p>
+                        <p class="font-semibold mb-4 text-grey-dark text-xs"><i class="fas fa-calendar-day mr-2 w-2 leading-tight text-grey-dark"></i>August 2017</p>
+                        <p class="mb-4 leading-loose">I hosted a workshop with my friend <a target="_blank" href="https://twitter.com/mikeymikemw">Michael Woodward</a> teaching people how to code PHP with PHP School.</p>
                     </div>
                 </div>
                 <div class="flex flex-col flex-grow max-w-sm w-full md:mb-8 px-3 pt-8">
                     <h2 class="font-light uppercase text-grey-lightest text-2xl mt-3 mb-2">Employment History</h2>
-                    <div class="bg-white shadow rounded w-full px-4 pt-5 my-2">
-                        <div class="flex flex-col mb-3 justify-center bg-grey-lightest -mx-4 -mt-5 rounded-t">
+                    <div class="bg-white border-4 border-indigo-dark my-shadow w-full px-4 pt-5 my-2">
+                        <div class="flex flex-col mb-3 justify-center bg-grey-lightest -mx-4 -mt-5 relative">
                             <h3 class="font-semibold text-indigo-dark text-center mt-4 mb-4 pr-4 uppercase">Senior Developer</h3>
-                            <div class="flex justify-center mb-6"><img class="h-16" src="jh.png"></div>
+                            <div class="flex justify-center mb-6"><img class="h-16" src="jh.png" alt="JH"></div>
                             <p class="font-semibold mb-4 text-grey-dark text-xs text-center leading-tight"><i class="fas fa-calendar-day mr-2 w-2 leading-tight text-grey-dark"></i>August 2013 - August 2017</p>
+                            <i class="absolute pin-r mr-5 border border-grey-darkest p-1 w-5 h-5 fas fa-chevron-down shadow-black-3px cursor-pointer"></i>
                         </div>
-                        <p class="mb-4">Progressing from Junior to senior developer, I worked on many projects at every stage. From planning to development, testing to maintenance. I helped and implemented many processes including unit testing, code quality, code reviews, continuous integration. I automated many tasks writing and maintaining a host of tools and applications. I improved versioning processes and migrated 100+ repositories to GitHub from SVN.</p>
-                        <p class="mb-4">My proudest moments came from mentoring and teaching other team members through code reviews, pair programming, discussions and meetings. I also transitioned the whole team to writing and understanding unit tests.</p>
-                        <p class="mb-4">I’ve also been involved with recruitment process and ran development team meetings.</p>
-                        <p class="mb-4">During my time at JH I contributed to many open source projects including Magento itself.</p>
+                        <p class="mb-4 leading-loose">Progressing from Junior to senior developer, I worked on a diverse set of projects at various stages. From planning to development, testing to maintenance. I helped and implemented many processes including unit testing, code quality, code reviews, continuous integration. I automated many tasks writing and maintaining a host of tools and applications. I improved versioning processes and migrated 100+ repositories to GitHub from SVN.</p>
+                        <p class="mb-4 leading-loose">My proudest moments came from mentoring and teaching other team members through code reviews, pair programming, discussions and meetings. I also transitioned the whole team to writing and understanding unit tests.</p>
+                        <p class="mb-4 leading-loose">I’ve also been involved with recruitment process and ran development team meetings.</p>
+                        <p class="mb-4 leading-loose">During my time at JH I contributed to many open source projects including Magento itself.</p>
                         <div class="bg-grey-lightest -mx-4 px-4 pt-8 pb-4 mt-8 -mb-8 relative">
                             <p class="uppercase text-xs font-bold text-blue-dark absolute pin-t -mt-2 leading-normal">Projects</p>
                             <ul class="list-reset flex flex-wrap justify-center text-xs font-bold uppercase">
-                                <li class="px-2 mr-2 shadow-black-3px hover:shift-1px hover:shadow-black-1px mb-2 bg-black text-white"><a class="text-white no-underline" href="https://www.hypefortype.com/">Hype For Type</a></li>
-                                <li class="px-2 mr-2 shadow-black-3px mb-2 bg-black text-white"><a class="text-white no-underline" href="https://www.swooneditions.com/">Swoon Editions</a></li>
+                                <li class="px-2 mr-2 shadow-black-3px hover:shift-1px hover:shadow-black-1px mb-2 bg-black text-white"><a target="_blank" class="text-white no-underline" href="https://www.hypefortype.com/">Hype For Type</a></li>
+                                <li class="px-2 mr-2 shadow-black-3px mb-2 bg-black text-white"><a target="_blank" class="text-white no-underline" href="https://www.swooneditions.com/">Swoon Editions</a></li>
                                 <li class="px-2 mr-2 shadow-black-3px mb-2 bg-black text-white">FPS</li>
-                                <li class="px-2 mr-2 shadow-black-3px mb-2 bg-black text-white"><a class="text-white no-underline" href="https://www.selcobw.com/">Selco</a></li>
+                                <li class="px-2 mr-2 shadow-black-3px mb-2 bg-black text-white"><a target="_blank" class="text-white no-underline" href="https://www.selcobw.com/">Selco</a></li>
                                 <li class="px-2 mb-2 shadow-black-3px bg-black text-white">Bench</li>
                             </ul>
                         </div>
@@ -117,21 +121,45 @@
                             <p class="uppercase text-xs font-bold text-blue-dark absolute pin-t -mt-2 leading-normal">Skills</p>
                             <ul class="list-reset flex flex-wrap justify-center text-xs leading-tight tracking-wide uppercase font-semibold">
                                 <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Magento</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Zend Framework 1 + 2</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Symfony</span> <span class="text-grey">,</span></li>
                                 <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Git</span> <span class="text-grey">,</span></li>
                                 <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">MySQL/SQL</span> <span class="text-grey">,</span></li>
                                 <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Linux</span> <span class="text-grey">,</span></li>
                                 <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Xdebug</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">PHPunit</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Prophecy</span> <span class="text-grey">,</span></li>
                                 <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Composer</span> <span class="text-grey">,</span></li>
                                 <li class=" py-1 mb-1 text-blue cursor-pointer"><span class="hover:underline">Circle CI</span></li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="bg-white shadow rounded w-full p-4 my-2">
-                        <h3 class="font-semibold text-indigo-dark mb-2">Senior Developer | Insurance Initiatives</h3>
-                        <p class="font-medium mb-2 text-grey-dark">May 2013 - July 2013</p>
-                        <p class="text-grey-darker"></p>
-
+                    <div class="bg-white border-4 border-indigo-dark my-shadow w-full px-4 pt-5 my-2">
+                        <div class="flex flex-col mb-3 justify-center bg-grey-lightest -mx-4 -mt-5 rounded-t relative">
+                            <h3 class="font-semibold text-indigo-dark text-center mt-4 mb-4 pr-4 uppercase">Junior Software Developer</h3>
+                            <div class="flex justify-center mb-6"><img class="h-12" src="wwct.svg" alt="Worldwide Clinical Trials"></div>
+                            <p class="font-semibold mb-4 text-grey-dark text-xs text-center leading-tight"><i class="fas fa-calendar-day mr-2 w-2 leading-tight text-grey-dark"></i>September 2011 - October 2012</p>
+                            <i class="absolute pin-r mr-5 border border-grey-darkest p-1 w-5 h-5 fas fa-chevron-down shadow-black-3px cursor-pointer"></i>
+                        </div>
+                        <p class="mb-4 leading-loose">I took the position at Worldwide Clinical Trials as part of my university placement year. Throughout the 12 month period I worked on various projects, through different departments. Due to my high performance the work period was extended up until the day before I started back at university.</p>
+                        <p class="mb-4 leading-loose">My initial role was as a C developer working on a bespoke database system, fixing bugs and amending existing code. I developed scripts and programs in my spare time to automate monotonous tasks which were later rolled out to other staff members.</p>
+                        <p class="mb-4 leading-loose">I moved on to a penetration testing exercise for a new product due to be released soon for a major retailer. I found and fixed various high security vulnerabilities.</p>
+                        <p class="mb-4 leading-loose">The last period of my employment was focused on developing and maintaining a Zend Framework 1 application and its complex SQL reports, procedures and triggers. I developed a Node base notification system fed by database triggers. Towards the end I took over as the lead developer implementing various features to be showcased to customers around the globe.</p>
+                        <div class="bg-grey-lightest -mx-4 mt-8 py-5 px-4 border-b rounded relative">
+                            <p class="uppercase text-xs font-bold text-blue-dark absolute pin-t -mt-2 leading-normal">Skills</p>
+                            <ul class="list-reset flex flex-wrap justify-center text-xs leading-tight tracking-wide uppercase font-semibold">
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">SVN</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Linux</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">PostgreSQL/SQL</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">C</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Bash</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 text-blue cursor-pointer"><span class="hover:underline">PHP</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Zend Framework 1</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Node.js</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 text-blue cursor-pointer"><span class="hover:underline">Twitter Bootstrap</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
