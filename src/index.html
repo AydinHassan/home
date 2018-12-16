@@ -5,15 +5,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
-    <body class="text-grey-darkest font-light leading-normal">
+    <body class="text-grey-darkest font-light text-sm leading-medium">
         <div class="flex flex-col md:flex-row font-sans " style="background-image: linear-gradient(60deg, #97d6ff 0%, #9599E2 100%);">
-            <div class="flex flex-col flex-grow justify-between  max-w-sm w-full h-screen sticky pin-t px-3 pt-8 bg-red-lighter">
+            <div class="flex flex-col justify-between h-screen sticky pin-t px-3 pt-8 bg-red-lighter" style="width: 450px">
                 <div class="flex flex-col w-full items-end">
                     <div class="mt-16 text-right mr-4 text-sm font-normal text-red-darker italic">
-                        <p>Age: 30</p>
-                        <p>Lang: English</p>
-                        <p>Availability: Fulltime</p>
-                        <p>Location: Tbilisi, Georgia</p>
+                        <p class="mb-1"><span class="text-red-light font-semibold">Age</span> <span class="font-bold">30</span></p>
+                        <p class="mb-1"><span class="text-red-light font-semibold">Lang</span> <span class="font-bold">English</span></p>
+                        <p class="mb-1"><span class="text-red-light font-semibold">Availability</span> <span class="font-bold">Fulltime</span></p>
+                        <p class="mb-1"><span class="text-red-light font-semibold">Location</span> <span class="font-bold">Tbilisi, Georgia</span></p>
                     </div>
                     <h2 class="font-normal w-full uppercase text-grey-darkest text-right text-5xl tracking-wide italic mb-2 pr-4">Aydin Hassan</h2>
                     <div class="flex w-full justify-end mb-6">
@@ -30,7 +30,7 @@
                             <i class="fab fa-instagram w-6 h-6 m-2"></i>
                         </a>
                     </div>
-                    <img class="h-32 w-32 mb-8 mr-4 shadow" src="./me.jpg">
+                    <img class="h-32 w-32 mb-8 mr-4 shadow rounded-full" src="./me.jpg">
                 </div>
                 <!--footer-->
                 <div class="flex flex-col items-center mb-4">
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="flex">
-                <div class="flex flex-col flex-grow items-center max-w-sm w-full md:mb-8 pl-6 pr-3 pt-8">
+                <div class="flex flex-col flex-grow  max-w-sm w-full md:mb-8 pl-6 pr-3 pt-8">
                     <h2 class="font-light uppercase text-grey-lightest text-2xl mt-3 mb-2">Achievements</h2>
                     <div class="bg-white shadow rounded w-full p-4 my-2">
                         <h3 class="font-semibold text-indigo-dark mb-2">Education</h3>
@@ -91,27 +91,46 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col flex-grow items-center max-w-sm w-full md:mb-8 px-3 pt-8">
+                <div class="flex flex-col flex-grow max-w-sm w-full md:mb-8 px-3 pt-8">
                     <h2 class="font-light uppercase text-grey-lightest text-2xl mt-3 mb-2">Employment History</h2>
-
-                    <div class="bg-white shadow rounded w-full p-4 my-2">
-                        <h3 class="font-semibold text-indigo-dark mb-2">Senior Developer | JH</h3>
-                        <p class="font-medium mb-2 text-grey-dark">August 2013 - August 2017</p>
-                        <p class="text-grey-darker">I progressed from Junior developer to a lead developer in my time at JH. I have worked on many projects during my time there and worked at every stage of the project from planning, road map meetings, development, testing and maintenance.
-
-                            I implemented many processes during my time at JH and built and maintained many automation tools to improve the throughput of the development team. A subset of these include automating deploys, updating code versioning, migrating 100+ projects to GitHub, improving and creating tools to manage dependencies, introducing unit testing to the team and teaching and mentoring them how to write unit tests. With this we saw a dramatic decrease of bugs and a massive decrease in the time needed to fix any other bugs found. I introduced continuous integration to our workflow using all of the above techniques. I've also contributed many fixes to Magento 2.
-
-                            A small set of the clients I worked for at JH: Hype For Type, Swoon Editions, Bench, Selco, FPS.</p>
+                    <div class="bg-white shadow rounded w-full px-4 pt-5 my-2">
+                        <div class="flex flex-col mb-3 justify-center bg-grey-lightest -mx-4 -mt-5 rounded-t">
+                            <h3 class="font-semibold text-indigo-dark text-center mt-4 mb-4 pr-4 uppercase">Senior Developer</h3>
+                            <div class="flex justify-center mb-6"><img class="h-16" src="jh.png"></div>
+                            <p class="font-semibold mb-4 text-grey-dark text-xs text-center leading-tight"><i class="fas fa-calendar-day mr-2 w-2 leading-tight text-grey-dark"></i>August 2013 - August 2017</p>
+                        </div>
+                        <p class="mb-4">Progressing from Junior to senior developer, I worked on many projects at every stage. From planning to development, testing to maintenance. I helped and implemented many processes including unit testing, code quality, code reviews, continuous integration. I automated many tasks writing and maintaining a host of tools and applications. I improved versioning processes and migrated 100+ repositories to GitHub from SVN.</p>
+                        <p class="mb-4">My proudest moments came from mentoring and teaching other team members through code reviews, pair programming, discussions and meetings. I also transitioned the whole team to writing and understanding unit tests.</p>
+                        <p class="mb-4">I’ve also been involved with recruitment process and ran development team meetings.</p>
+                        <p class="mb-4">During my time at JH I contributed to many open source projects including Magento itself.</p>
+                        <div class="bg-grey-lightest -mx-4 px-4 pt-8 pb-4 mt-8 -mb-8 relative">
+                            <p class="uppercase text-xs font-bold text-blue-dark absolute pin-t -mt-2 leading-normal">Projects</p>
+                            <ul class="list-reset flex flex-wrap justify-center text-xs font-bold uppercase">
+                                <li class="px-2 mr-2 shadow-black-3px hover:shift-1px hover:shadow-black-1px mb-2 bg-black text-white"><a class="text-white no-underline" href="https://www.hypefortype.com/">Hype For Type</a></li>
+                                <li class="px-2 mr-2 shadow-black-3px mb-2 bg-black text-white"><a class="text-white no-underline" href="https://www.swooneditions.com/">Swoon Editions</a></li>
+                                <li class="px-2 mr-2 shadow-black-3px mb-2 bg-black text-white">FPS</li>
+                                <li class="px-2 mr-2 shadow-black-3px mb-2 bg-black text-white"><a class="text-white no-underline" href="https://www.selcobw.com/">Selco</a></li>
+                                <li class="px-2 mb-2 shadow-black-3px bg-black text-white">Bench</li>
+                            </ul>
+                        </div>
+                        <div class=" -mx-4 mt-8 py-5 px-4 border-b rounded relative">
+                            <p class="uppercase text-xs font-bold text-blue-dark absolute pin-t -mt-2 leading-normal">Skills</p>
+                            <ul class="list-reset flex flex-wrap justify-center text-xs leading-tight tracking-wide uppercase font-semibold">
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Magento</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Git</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">MySQL/SQL</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Linux</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Xdebug</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Composer</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 text-blue cursor-pointer"><span class="hover:underline">Circle CI</span></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="bg-white shadow rounded w-full p-4 my-2">
                         <h3 class="font-semibold text-indigo-dark mb-2">Senior Developer | Insurance Initiatives</h3>
                         <p class="font-medium mb-2 text-grey-dark">May 2013 - July 2013</p>
-                        <p class="text-grey-darker">I progressed from Junior developer to a lead developer in my time at JH. I have worked on many projects during my time there and worked at every stage of the project from planning, road map meetings, development, testing and maintenance.
-
-                            I implemented many processes during my time at JH and built and maintained many automation tools to improve the throughput of the development team. A subset of these include automating deploys, updating code versioning, migrating 100+ projects to GitHub, improving and creating tools to manage dependencies, introducing unit testing to the team and teaching and mentoring them how to write unit tests. With this we saw a dramatic decrease of bugs and a massive decrease in the time needed to fix any other bugs found. I introduced continuous integration to our workflow using all of the above techniques. I've also contributed many fixes to Magento 2.
-
-                            A small set of the clients I worked for at JH: Hype For Type, Swoon Editions, Bench, Selco, FPS.</p>
+                        <p class="text-grey-darker"></p>
 
                     </div>
                 </div>
