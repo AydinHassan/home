@@ -12,3 +12,27 @@
 .my-shadow {
     box-shadow: 6px 6px 0px 0 rgba(0, 0, 0, 0.4);
 }
+
+.tabs li.active a {
+    @apply border-l-4 border-t-4 border-r-4 border-indigo-dark;
+
+}
+
+.tabs li.active {
+}
+
+.tabs-panel {
+    display: none;
+}
+
+.tabs-panel.active {
+    display: flex;
+}
+
+.fa-li {
+    left: -2em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit;
+}

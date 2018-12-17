@@ -64,22 +64,113 @@
                         </div>
                     </div>
                     <div class="bg-white border-4 border-indigo-dark my-shadow w-full p-4 my-2">
-                        <h3 class="font-semibold text-indigo-dark mb-2">Open Source</h3>
-                        <div class="flex justify-center">
-                            <div class="flex flex-col flex-1">
-                                <h3>My projects</h3>
-                                <ul>
-                                    <li>Project One</li>
-                                    <li>Project Two</li>
-                                    <li>Project Three</li>
+                        <h3 class="font-semibold text-indigo-dark mb-2 uppercase">Open Source</h3>
+                        <p class="leading-loose mb-4">I've contributed to a myriad of open source projects and also have maintain my own. This is a great chance to inspect my code style & quality! I've listed a selection of my proudest below. Check <a target="_blank" href="https://github.com/AydinHassan">my GitHub</a> for more</p>
+                        <div class="">
+                            <ul class="tabs list-reset flex justify-center -mx-4 border-b-4 border-indigo-dark">
+                                <li class="-mb-1 mr-1 active">
+                                    <a class="bg-white inline-block py-2 px-4 text-indigo-dark hover:text-indigo-darker font-semibold no-underline" href="#">My projects</a>
+                                </li>
+                                <li class="-mb-1 mr-1">
+                                    <a class="bg-white inline-block py-2 px-4 text-indigo-dark hover:text-indigo-darker font-semibold no-underline" href="#">Projects I've contributed to</a>
+                                </li>
+                            </ul>
+                            <div id="open-source-tab-my-projects" class="tabs-panel active flex flex-col flex-1 mt-6 mb-2" data-index="0">
+                                <ul class="list-reset ml-6">
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/php-school/cli-menu">php-school/cli-menu</a>
+                                        <p class="inline ml-2 text-xs"> Build beautiful PHP CLI menus</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/AydinHassan/magento-core-composer-installer">Magento Core Composer Installer</a>
+                                        <p class="inline ml-2 text-xs">A Composer Plugin to manage Magento 1 Core as a project dependency</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/AydinHassan/progress-bar-log">Progress Bar Log</a>
+                                        <p class="inline ml-2 text-xs">A PHP CLI component to display a progress bar and last X logs at the same time.</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/AydinHassan/m2-opcache-monitor">Magento 2 OpCache Monitor</a>
+                                        <p class="inline ml-2 text-xs">A Magento 2 extension to monitor PHP OpCache from the admin</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/AydinHassan/collector">Collector</a>
+                                        <p class="inline ml-2 text-xs">A PHP collection library inspired by Laravel Collections, built using generators to preserve memory</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/AydinHassan/m2-module-import">Magento 2 Import</a>
+                                        <p class="inline ml-2 text-xs">Import module for Magento 2 - provides commands, logs, reporting, utilities and abstractions for building imports for Magento 2 projects</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/WeareJH/Flexitime">Flexitime</a>
+                                        <p class="inline ml-2 text-xs">A Zend Framework 2 application for businesses to log and monitor employee start and finish times. I wrote and maintained the application.</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/php-school/phpschool.io">PHP School Website</a>
+                                        <p class="inline ml-2 text-xs">A PHP application developed with Slim Framework. PHP backend with admin + auth. Modern frontend with lots of tooling, SASS, Browsersync, Gulp, Postcss, etc.</p>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="flex flex-col flex-1">
-                                <h3>Projects I've contributed to</h3>
-                                <ul>
-                                    <li>Project One</li>
-                                    <li>Project Two</li>
-                                    <li>Project Three</li>
+                            <div id="open-source-tab-third-party" class="tabs-panel flex flex-col flex-1 mt-6 mb-2" data-index="1">
+                                <ul class="list-reset ml-6">
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/Cotya/magento-composer-installer">Magento Composer Installer</a>
+                                        <p class="inline ml-2 text-xs">The de facto composer installer for Magento 1 third party modules. I rewrite a large portion of the library and provided lots of unit tests.</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class=" fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/netz98/n98-magerun">n98 Magerun</a>
+                                        <p class="inline ml-2 text-xs">The most important CLI tool for Magento. I have provided many commands, tests and bug fixes to the project. I was even awarded a PHP Storm license for my work on the project.</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/magento/magento2/pulls?utf8=%E2%9C%93&q=aydinhassan">Magento 2</a>
+                                        <p class="inline ml-2 text-xs">Magento 2 PHP eCommerce framework - I contributed some bug fixes</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/adamwathan/form">Form - Laravel form builder</a>
+                                        <p class="inline ml-2 text-xs">I contributed datetime-local support</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/composer/composer/pull/3322">Composer</a>
+                                        <p class="inline ml-2 text-xs">PHP Dependency Manager - I contributed a few small fixes</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/nikic/PHP-Parser/pull/232">PHP Parser</a>
+                                        <p class="inline ml-2 text-xs">PHP Parser - I increased the test coverage of the pretty printer</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/Roave/BetterReflection/pull/166">Better Reflection</a>
+                                        <p class="inline ml-2 text-xs">Fixed a small bug regarding array <merging></merging></p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/doctrine/DoctrineModule/pull/395">Doctrine Module for Zend Framework 2</a>
+                                        <p class="inline ml-2 text-xs">Fixed a small bug regarding validators</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/doctrine/DoctrineModule/pull/395">Doctrine Module for Zend Framework 2</a>
+                                        <p class="inline ml-2 text-xs">Fixed a small bug regarding validators</p>
+                                    </li>
+                                    <li class="mb-2 relative">
+                                        <span class="fa-li"><i class="w-2 fas fa-code-branch text-grey-dark"></i></span>
+                                        <a target="_blank" href="https://github.com/ddeboer/data-import">Data Import Library for PHP</a>
+                                        <p class="inline ml-2 text-xs">Contributed many features, tests, bug fixes and refactors</p>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -103,7 +194,7 @@
                             <p class="font-semibold mb-4 text-grey-dark text-xs text-center leading-tight"><i class="fas fa-calendar-day mr-2 w-2 leading-tight text-grey-dark"></i>August 2013 - August 2017</p>
                             <i class="absolute pin-r mr-5 border border-grey-darkest p-1 w-5 h-5 fas fa-chevron-down shadow-black-3px cursor-pointer"></i>
                         </div>
-                        <p class="mb-4 leading-loose">Progressing from Junior to senior developer, I worked on a diverse set of projects at various stages. From planning to development, testing to maintenance. I helped and implemented many processes including unit testing, code quality, code reviews, continuous integration. I automated many tasks writing and maintaining a host of tools and applications. I improved versioning processes and migrated 100+ repositories to GitHub from SVN.</p>
+                        <p class="mb-4 leading-loose">Progressing from junior to senior developer, I worked on a diverse set of projects at various stages. From planning to development, testing to maintenance. I helped and implemented many processes including unit testing, code quality, code reviews, continuous integration. I automated many tasks writing and maintaining a host of tools and applications. I improved versioning processes and migrated 100+ repositories to GitHub from SVN.</p>
                         <p class="mb-4 leading-loose">My proudest moments came from mentoring and teaching other team members through code reviews, pair programming, discussions and meetings. I also transitioned the whole team to writing and understanding unit tests.</p>
                         <p class="mb-4 leading-loose">I’ve also been involved with recruitment process and ran development team meetings.</p>
                         <p class="mb-4 leading-loose">During my time at JH I contributed to many open source projects including Magento itself.</p>
@@ -120,7 +211,7 @@
                         <div class=" -mx-4 mt-8 py-5 px-4 border-b rounded relative">
                             <p class="uppercase text-xs font-bold text-blue-dark absolute pin-t -mt-2 leading-normal">Skills</p>
                             <ul class="list-reset flex flex-wrap justify-center text-xs leading-tight tracking-wide uppercase font-semibold">
-                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Magento</span> <span class="text-grey">,</span></li>
+                                <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Magento 1 + 2</span> <span class="text-grey">,</span></li>
                                 <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Zend Framework 1 + 2</span> <span class="text-grey">,</span></li>
                                 <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Symfony</span> <span class="text-grey">,</span></li>
                                 <li class=" py-1 mb-1 mr-1 text-blue cursor-pointer"><span class="hover:underline">Git</span> <span class="text-grey">,</span></li>
