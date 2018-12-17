@@ -129,6 +129,7 @@ module.exports = {
   screens: {
     'sm': '576px',
     'md': '768px',
+    'lg': '992px',
   },
 
 
@@ -792,7 +793,7 @@ module.exports = {
     borderCollapse: false,
     borderColors: ['responsive', 'hover', 'focus'],
     borderRadius: ['responsive'],
-    borderStyle: false,
+    borderStyle: ['responsive'],
     borderWidths: ['responsive'],
     cursor: ['responsive'],
     display: ['responsive'],
