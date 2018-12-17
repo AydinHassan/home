@@ -32,3 +32,18 @@ for(let el of tabLinks) {
         panel[0].classList.add("active");
     });
 }
+
+const hideButtons = document.querySelectorAll(".hide-section");
+for(let el of hideButtons) {
+    el.addEventListener("click", e => {
+        e.preventDefault();
+
+        const section = document.getElementById(el.getAttribute("data-section"));
+
+        if (section.classList.contains('active')) {
+            section.classList.remove('active');
+        } else {
+            section.classList.add('active');
+        }
+    })
+}
