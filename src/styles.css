@@ -43,6 +43,13 @@
 .active {
     display: inline-block;
 }
+
 .skill-highlight {
     @apply border-b border-indigo-lighter border-dashed;
+}
+
+@media (min-width: 768px) {
+    .about-me {
+        width: 450px;
+    }
 }
