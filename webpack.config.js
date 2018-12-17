@@ -3,6 +3,21 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
+
+const plugins = [
+    new ExtractTextPlugin('styles.css', {
+        disable: process.env.NODE_ENV === 'development',
+    }),
+    new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: 'src/index.html',
+    }),
+];
+
+if (process.env.NODE_ENV === 'production') {
+    plugins.unshift(new CleanWebpackPlugin(['dist']));
+}
+
 module.exports = {
     entry: './src/index.js',
     mode: process.env.NODE_ENV,
@@ -38,14 +53,5 @@ module.exports = {
 
         ],
     },
-    plugins: [
-        new CleanWebpackPlugin(['dist']),
-        new ExtractTextPlugin('styles.css', {
-            disable: process.env.NODE_ENV === 'development',
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: 'src/index.html',
-        }),
-    ],
+    plugins: plugins,
 }
