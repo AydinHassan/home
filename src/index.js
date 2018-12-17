@@ -8,10 +8,11 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram";
 import { faCalendarDay } from "@fortawesome/free-solid-svg-icons/faCalendarDay";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons/faCodeBranch";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 
 config.autoAddCss = false;
 
-library.add(faTwitter, faGithub, faLinkedinIn, faInstagram, faCalendarDay, faChevronDown, faCodeBranch);
+library.add(faTwitter, faGithub, faLinkedinIn, faInstagram, faCalendarDay, faChevronDown, faCodeBranch, faEnvelope);
 dom.watch();
 
 const tabLinks = document.querySelectorAll(".tabs a");
