@@ -1,6 +1,7 @@
-const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -38,6 +39,7 @@ module.exports = {
         ],
     },
     plugins: [
+        new CleanWebpackPlugin(['dist']),
         new ExtractTextPlugin('styles.css', {
             disable: process.env.NODE_ENV === 'development',
         }),
