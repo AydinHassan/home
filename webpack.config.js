@@ -2,7 +2,20 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const PurgecssPlugin = require("purgecss-webpack-plugin");
 
+const glob = require("glob-all");
+const isDev = process.env.NODE_ENV === "development";
+
+class TailwindExtractor {
+    static extract(content) {
+        return content.match(/[A-z0-9-:\/]+/g) || [];
+    }
+}
+
+function noop() {
+    return () => {};
+}
 
 const plugins = [
     new ExtractTextPlugin('styles.css', {
@@ -13,10 +26,6 @@ const plugins = [
         template: 'src/index.html',
     }),
 ];
-
-if (process.env.NODE_ENV === 'production') {
-    plugins.unshift(new CleanWebpackPlugin(['dist']));
-}
 
 module.exports = {
     entry: './src/index.js',
@@ -53,5 +62,23 @@ module.exports = {
 
         ],
     },
-    plugins: plugins,
+    plugins: [
+        isDev ? noop() : new CleanWebpackPlugin(['dist']),
+        new ExtractTextPlugin('styles.css', {
+            disable: process.env.NODE_ENV === 'development',
+        }),
+        isDev ? noop() : new PurgecssPlugin({
+            paths: glob.sync([path.join(__dirname, "./src/*.html")]),
+            extractors: [
+                {
+                    extractor: TailwindExtractor,
+                    extensions: ["html", "js"]
+                }
+            ]
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'src/index.html',
+        }),
+    ],
 }
