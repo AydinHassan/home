@@ -61,7 +61,7 @@ let colors = {
   'red-dark': '#cc1f1a',
   'red': '#e3342f',
   'red-light': '#ef5753',
-  'red-lighter': '#f9acaa',
+  'red-lighter': '#f9c1bb',
   'red-lightest': '#fcebea',
 
   'blue-darkest': '#12283a',
