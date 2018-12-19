@@ -177,3 +177,11 @@
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
     @apply bg-grey-darkest text-white;
 }
+
+.modal {
+    display: none;
+}
+
+.modal.active {
+    display: flex;
+}

@@ -50,5 +50,31 @@ for(let el of hideButtons) {
         } else {
             section.classList.add('active');
         }
-    })
+    });
 }
+
+const closeButtons = document.querySelectorAll(".close");
+for(let el of closeButtons) {
+    el.addEventListener("click", e => {
+        e.preventDefault();
+        el.parentElement.parentElement.parentElement.classList.remove("active");
+    });
+}
+
+const modals = document.querySelectorAll(".modal");
+
+document.addEventListener("click", e => {
+    if (e.target.closest('.modal-window')) {
+        return;
+    }
+
+    for (let el of modals) {
+        el.classList.remove('active');
+    }
+});
+
+const skillSetSummaryShowButton = document.getElementById('skill-set-summary-show');
+skillSetSummaryShowButton.addEventListener("click", e => {
+    e.stopPropagation();
+    document.getElementById('skill-set-summary-modal').classList.add('active');
+});

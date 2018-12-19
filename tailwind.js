@@ -80,13 +80,13 @@ let colors = {
   'indigo-lighter': '#b2b7ff',
   'indigo-lightest': '#e6e8ff',
 
-  'purple-darkest': '#21183c',
-  'purple-darker': '#382b5f',
-  'purple-dark': '#794acf',
-  'purple': '#9561e2',
-  'purple-light': '#a779e9',
-  'purple-lighter': '#d6bbfc',
-  'purple-lightest': '#f3ebff',
+  'smoke-darkest': 'rgba(0, 0, 0, 0.9)',
+  'smoke-darker': 'rgba(0, 0, 0, 0.75)',
+  'smoke-dark': 'rgba(0, 0, 0, 0.6)',
+  'smoke': 'rgba(0, 0, 0, 0.5)',
+  'smoke-light': 'rgba(0, 0, 0, 0.4)',
+  'smoke-lighter': 'rgba(0, 0, 0, 0.25)',
+  'smoke-lightest': 'rgba(0, 0, 0, 0.1)',
 }
 
 module.exports = {
