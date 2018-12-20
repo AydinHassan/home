@@ -9,13 +9,14 @@ import { faCalendarDay } from "@fortawesome/free-solid-svg-icons/faCalendarDay";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons/faCodeBranch";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
+import { faArrowAltCircleDown } from "@fortawesome/free-solid-svg-icons/faArrowAltCircleDown";
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons/faCheckCircle";
 
 config.autoAddCss = false;
 
 library.add(
     faTwitter, faGithub, faLinkedinIn, faInstagram, faCalendarDay,
-    faChevronDown, faCodeBranch, faEnvelope, faCheckCircle
+    faChevronDown, faCodeBranch, faEnvelope, faCheckCircle, faArrowAltCircleDown
 );
 dom.watch();
 

@@ -3,6 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const PurgecssPlugin = require("purgecss-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const glob = require("glob-all");
 const isDev = process.env.NODE_ENV === "development";
@@ -43,7 +44,7 @@ module.exports = {
                 }),
             },
             {
-                test: /.*\.(gif|png|jpe?g|svg)$/i,
+                test: /.*\.(gif|png|jpe?g|svg|pdf)$/i,
                 use: [
                     {
                         loader: 'file-loader'
@@ -64,6 +65,7 @@ module.exports = {
     },
     plugins: [
         isDev ? noop() : new CleanWebpackPlugin(['dist']),
+        new CopyWebpackPlugin([{ from: 'src/Aydin-Hassan-CV.pdf', to: 'Aydin-Hassan-CV.pdf'}]),
         new ExtractTextPlugin('styles.css', {
             disable: process.env.NODE_ENV === 'development',
         }),
@@ -77,7 +79,6 @@ module.exports = {
             ]
         }),
         new HtmlWebpackPlugin({
-            filename: 'index.html',
             template: 'src/index.html',
         }),
     ],
