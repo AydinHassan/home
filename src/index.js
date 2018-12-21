@@ -4,7 +4,7 @@ import { library, dom, config } from "@fortawesome/fontawesome-svg-core";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram";
+import { faFlickr } from "@fortawesome/free-brands-svg-icons/faFlickr";
 import { faCalendarDay } from "@fortawesome/free-solid-svg-icons/faCalendarDay";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons/faCodeBranch";
@@ -15,7 +15,7 @@ import { faCheckCircle } from "@fortawesome/free-regular-svg-icons/faCheckCircle
 config.autoAddCss = false;
 
 library.add(
-    faTwitter, faGithub, faLinkedinIn, faInstagram, faCalendarDay,
+    faTwitter, faGithub, faLinkedinIn, faFlickr, faCalendarDay,
     faChevronDown, faCodeBranch, faEnvelope, faCheckCircle, faArrowAltCircleDown
 );
 dom.watch();
