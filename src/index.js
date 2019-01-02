@@ -11,12 +11,15 @@ import { faCodeBranch } from "@fortawesome/free-solid-svg-icons/faCodeBranch";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import { faArrowAltCircleDown } from "@fortawesome/free-solid-svg-icons/faArrowAltCircleDown";
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons/faCheckCircle";
+import { faHandshake } from "@fortawesome/free-regular-svg-icons/faHandshake";
+import { faWrench } from "@fortawesome/free-solid-svg-icons/faWrench";
 
 config.autoAddCss = false;
 
 library.add(
     faTwitter, faGithub, faLinkedinIn, faFlickr, faCalendarDay,
-    faChevronDown, faCodeBranch, faEnvelope, faCheckCircle, faArrowAltCircleDown
+    faChevronDown, faCodeBranch, faEnvelope, faCheckCircle, faArrowAltCircleDown,
+    faWrench, faHandshake
 );
 dom.watch();
 
