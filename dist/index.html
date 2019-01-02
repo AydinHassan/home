@@ -19,34 +19,37 @@
         <link rel="manifest" href="/img/favicon/site.webmanifest">
     <link href="styles.css" rel="stylesheet"></head>
     <body class="text-grey-darkest font-light text-sm leading-medium ">
-        <div class="z-40 pin-t pin-l ml-1 mt-1 fixed bg-black text-xs font-semibold uppercase py-1 px-2 download-shadow ">
+        <div class="hidden md:flex z-40 pin-t pin-l ml-1 mt-1 fixed bg-black text-xs font-semibold uppercase py-1 px-2 download-shadow ">
             <a class="text-white hover:text-indigo-lighter no-underline flex items-center leading-none py-1" href="Aydin-Hassan-CV.pdf" download><i class="fas fa-arrow-alt-circle-down h-4 mr-1"></i>Download my CV</a>
         </div>
         <div class="flex flex-col font-sans">
             <div class="flex flex-col w-full justify-between items-center pin-t px-3 pt-8 bg-red-lighter">
-                <div class="flex flex-col w-full max-w-md md:w-full items-end">
-                    <h1 class="font-semibold w-full uppercase text-center text-grey-darkest text-5xl tracking-wide leading-normal mb-4">Aydin Hassan</h1>
+                <div class="flex flex-col w-full max-w-md md:w-full">
+                    <h1 class="font-semibold w-full uppercase text-center text-grey-darkest text-4xl md:text-5xl tracking-wide leading-normal mb-4">Aydin Hassan</h1>
                     <ul class="list-reset flex flex-wrap justify-center text-xs font-bold uppercase mt-4 mb-8">
                         <li class="px-2 mr-2 shadow-black-3px hover:shift-1px hover:shadow-black-1px mb-2 bg-black text-white">30 years old</li>
                         <li class="px-2 mr-2 shadow-black-3px mb-2 bg-black text-white">Native English speaker</li>
                         <li class="px-2 mr-2 shadow-black-3px mb-2 bg-black text-white">Available full-time remote</li>
                         <li class="px-2 mr-2 shadow-black-3px mb-2 bg-black text-white">Currently located in Tbilisi, Georgia</a></li>
                     </ul>
+                    <div class="flex justify-center">
+                        <button class="md:hidden mb-8 bg-indigo hover:bg-indigo-light text-white font-semibold py-4 px-4 border-b-4 border-indigo-dark shadow leading-none">Download my CV</button>
+                    </div>
                     <div class="flex w-full justify-center mb-6">
-                        <a href="mailto:aydin@hotmail.co.uk" class="hvr-fade rounded-full border border-grey-darkest text-grey-darkest h-12 w-12 mr-5 flex items-center justify-center">
-                            <i class="fas fa-envelope w-6"></i>
+                        <a href="mailto:aydin@hotmail.co.uk" class="hvr-fade rounded-full border border-grey-darkest text-grey-darkest h-10 w-10 md:h-12 md:w-12 mr-3 md:mr-5 p-1 flex items-center justify-center">
+                            <i class="fas fa-envelope w-6 h-6 m-2"></i>
                         </a>
-                        <a href="https://twitter.com/aydin_h" class="hvr-fade rounded-full border border-grey-darkest text-grey-darkest h-12 w-12 mr-5 flex items-center justify-center">
-                            <i class="fab fa-twitter w-6"></i>
+                        <a href="https://twitter.com/aydin_h" class="hvr-fade rounded-full border border-grey-darkest text-grey-darkest h-10 w-10 md:h-12 md:w-12 mr-3 md:mr-5 p-1 flex items-center justify-center">
+                            <i class="fab fa-twitter w-6 h-6 m-2"></i>
                         </a>
-                        <a href="https://github.com/AydinHassan" class="hvr-fade rounded-full border border-grey-darkest text-grey-darkest h-12 w-12 p-1 mr-5 flex items-center justify-center">
-                            <i class="fab fa-github w-6"></i>
+                        <a href="https://github.com/AydinHassan" class="hvr-fade rounded-full border border-grey-darkest text-grey-darkest h-10 w-10 md:h-12 md:w-12 p-1 mr-3 md:mr-5 flex items-center justify-center">
+                            <i class="fab fa-github w-6 h-6 m-2"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/aydin-hassan-80a12175/" class="hvr-fade rounded-full border border-grey-darkest text-grey-darkest h-12 w-12 p-1 mr-5 flex items-center justify-center">
-                            <i class="fab fa-linkedin-in w-6"></i>
+                        <a href="https://www.linkedin.com/in/aydin-hassan-80a12175/" class="hvr-fade rounded-full border border-grey-darkest text-grey-darkest h-10 w-10 md:h-12 md:w-12 mr-3 md:mr-5 p-1 flex items-center justify-center">
+                            <i class="fab fa-linkedin-in w-6 h-6 m-2"></i>
                         </a>
-                        <a href="https://www.flickr.com/photos/aydinh/" class="hvr-fade rounded-full border border-grey-darkest text-grey-darkest h-12 w-12 p-1  flex items-center justify-center">
-                            <i class="fab fa-flickr w-6"></i>
+                        <a href="https://www.flickr.com/photos/aydinh/" class="hvr-fade rounded-full border border-grey-darkest text-grey-darkest h-10 w-10 md:h-12 md:w-12 p-1 flex items-center justify-center">
+                            <i class="fab fa-flickr w-6 h-6 m-2"></i>
                         </a>
                     </div>
                     <div class="leading-loose text-base text-center">
@@ -413,37 +416,35 @@
                 </div>
             </div>
         </div>
-        <footer class="bg-grey-light py-24 flex flex-col items-center">
-            <div class="flex flex-col w-full max-w-md md:w-full px-3">
+        <footer class="bg-grey-light py-16 md:py-24 flex flex-col items-center">
+            <div class="flex flex-col w-full max-w-md md:w-full px-4">
                 <div class="mb-5">
                     <ul class="list-reset">
                         <li><a class="text-link m-1" target="_blank" href="https://www.upwork.com/o/profiles/users/_~010b86d1e2195061d2/">Upwork</a></li>
                         <li><a class="text-link m-1" download href="Aydin-Hassan-CV.pdf">Download my CV</a></li>
                     </ul>
-
-
                 </div>
                 <div class="flex">
-                    <a href="mailto:aydin@hotmail.co.uk" class="rounded-full border border-grey-darkest text-grey-darkest hover:bg-grey-darkest hover:text-white h-12 w-12 p-1 mr-5 flex items-center">
+                    <a href="mailto:aydin@hotmail.co.uk" class="rounded-full border border-grey-darkest text-grey-darkest hover:bg-grey-darkest hover:text-white h-10 w-10 md:h-12 md:w-12 p-1 mr-3 md:mr-5 flex items-center">
                         <i class="fas fa-envelope w-6 h-6 m-2 "></i>
                     </a>
-                    <a href="https://twitter.com/aydin_h" class="rounded-full border border-grey-darkest text-grey-darkest hover:bg-grey-darkest hover:text-white h-12 w-12 p-1 mr-5 flex items-center">
+                    <a href="https://twitter.com/aydin_h" class="rounded-full border border-grey-darkest text-grey-darkest hover:bg-grey-darkest hover:text-white h-10 w-10 md:h-12 md:w-12 p-1 mr-3 md:mr-5 flex items-center">
                         <i class="fab fa-twitter w-6 h-6 m-2 "></i>
                     </a>
-                    <a href="https://github.com/AydinHassan" class="rounded-full border border-grey-darkest text-grey-darkest hover:bg-grey-darkest hover:text-white h-12 w-12 p-1 mr-5 flex items-center">
+                    <a href="https://github.com/AydinHassan" class="rounded-full border border-grey-darkest text-grey-darkest hover:bg-grey-darkest hover:text-white h-10 w-10 md:h-12 md:w-12 p-1 mr-3 md:mr-5 flex items-center">
                         <i class="fab fa-github w-6 h-6 m-2"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/aydin-hassan-80a12175/" class="rounded-full border border-grey-darkest text-grey-darkest hover:bg-grey-darkest hover:text-white h-12 w-12 p-1 mr-5 flex items-center">
+                    <a href="https://www.linkedin.com/in/aydin-hassan-80a12175/" class="rounded-full border border-grey-darkest text-grey-darkest hover:bg-grey-darkest hover:text-white h-10 w-10 md:h-12 md:w-12 p-1 mr-3 md:mr-5 flex items-center">
                         <i class="fab fa-linkedin-in w-6 h-6 m-2"></i>
                     </a>
-                    <a href="https://www.flickr.com/photos/aydinh/" class="rounded-full border border-grey-darkest text-grey-darkest hover:bg-grey-darkest hover:text-white h-12 w-12 p-1  flex items-center">
+                    <a href="https://www.flickr.com/photos/aydinh/" class="rounded-full border border-grey-darkest text-grey-darkest hover:bg-grey-darkest hover:text-white h-10 w-10 md:h-12 md:w-12 p-1  flex items-center">
                         <i class="fab fa-flickr w-6 h-6 m-2"></i>
                     </a>
                 </div>
             </div>
         </footer>
         <div id="skill-set-summary-modal" class="modal fixed pin z-50 overflow-auto bg-smoke-dark flex justify-center">
-            <div class="modal-window p-4 w-full max-w-md mx-8 my-auto">
+            <div class="modal-window w-full max-w-md mx-4 my-4 md:mx-0 md:px-6 md:my-auto">
                 <div class="bg-white border-4 border-indigo-dark my-shadow p-8 flex flex-col relative">
                     <h2 class="text-center text-grey-darkest font-normal text-2xl uppercase tracking-wide mb-4">Skills summary</h2>
                     <p class="text-grey-darker mb-4 text-center">Although this might seem like a copy-pasted list of buzzwords - I guarantee my stated experience. If you look
