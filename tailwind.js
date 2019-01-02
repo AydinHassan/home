@@ -850,7 +850,7 @@ module.exports = {
     svgStroke: [],
     tableLayout: false,
     textAlign: ['responsive'],
-    textColors: ['responsive', 'hover', 'focus'],
+    textColors: ['responsive', 'hover', 'focus', 'visited'],
     textSizes: ['responsive'],
     textStyle: ['responsive', 'hover', 'focus'],
     tracking: ['responsive'],
@@ -882,7 +882,13 @@ module.exports = {
       // center: true,
       // padding: '1rem',
     }),
-    //require('glhd-tailwindcss-transitions')(),
+    function({ addVariant }) {
+      addVariant('visited', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `.visited${separator}${className}:visited`;
+        })
+      })
+    }
   ],
 
 

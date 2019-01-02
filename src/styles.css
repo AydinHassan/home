@@ -188,4 +188,17 @@
     display: flex;
 }
 
+.text-link {
+    @apply font-semibold;
+    @apply text-indigo no-underline;
+    background-image: linear-gradient(180deg,transparent 80%,rgba(178,183,255,.87) 0);
+}
+
+.text-link:hover {
+    background-image: linear-gradient(180deg,transparent 80%,rgba(120,134,215,.87) 0);
+}
+
+.text-link:visited {
+    @apply text-indigo;
+}
 
