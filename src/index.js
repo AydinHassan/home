@@ -87,3 +87,63 @@ skillSetSummaryShowButton.addEventListener("click", e => {
     e.stopPropagation();
     document.getElementById('skill-set-summary-modal').classList.add('active');
 });
+
+const backTop = document.querySelector('.back-to-top');
+const offset = 300;
+const scrollDuration = 700;
+const windowTop = window.scrollY || document.documentElement.scrollTop;
+let scrolling = false;
+
+if (windowTop > offset) {
+    backTop.classList.add('back-to-top--show');
+}
+
+window.addEventListener("scroll", function(event) {
+    if( !scrolling ) {
+        scrolling = true;
+        (!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250) : window.requestAnimationFrame(checkBackToTop);
+    }
+});
+
+backTop.addEventListener('click', function(event) {
+    event.preventDefault();
+    (!window.requestAnimationFrame) ? window.scrollTo(0, 0) : scrollTop(scrollDuration);
+});
+
+function checkBackToTop() {
+    const windowTop = window.scrollY || document.documentElement.scrollTop;
+
+    if (windowTop > offset) {
+        backTop.classList.add('back-to-top--show');
+    } else {
+        backTop.classList.remove( 'back-to-top--show', 'back-to-top--fade-out');
+    }
+
+    scrolling = false;
+}
+
+function scrollTop(duration) {
+    let start = window.scrollY || document.documentElement.scrollTop
+    let currentTime = null;
+
+    const animateScroll = function(timestamp){
+        if (!currentTime) {
+            currentTime = timestamp;
+        }
+        const progress = timestamp - currentTime;
+        const val = Math.max(Math.easeInOutQuad(progress, start, -start, duration), 0);
+        window.scrollTo(0, val);
+        if (progress < duration) {
+            window.requestAnimationFrame(animateScroll);
+        }
+    };
+
+    window.requestAnimationFrame(animateScroll);
+}
+
+Math.easeInOutQuad = function (t, b, c, d) {
+    t /= d/2;
+    if (t < 1) return c/2*t*t + b;
+    t--;
+    return -c/2 * (t*(t-2) - 1) + b;
+};
