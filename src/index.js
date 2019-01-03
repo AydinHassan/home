@@ -147,3 +147,29 @@ Math.easeInOutQuad = function (t, b, c, d) {
     t--;
     return -c/2 * (t*(t-2) - 1) + b;
 };
+
+const navToggle = document.getElementById('nav-toggle');
+const navEl = document.querySelector("nav");
+navToggle.addEventListener("click", e => {
+    const nav = document.getElementById("nav-mobile");
+
+    if (nav.classList.contains("block")) {
+        nav.classList.remove("block");
+        nav.classList.add("hidden");
+        navEl.classList.remove("bg-indigo", "mb-4");
+    } else {
+        console.log("here");
+        nav.classList.remove("hidden");
+        nav.classList.add("block");
+        navEl.classList.add("bg-indigo", "mb-4");
+    }x
+});
+
+const navLinks = document.querySelectorAll('#nav-mobile a');
+for (let navLink of navLinks) {
+    navLink.addEventListener("click", e => {
+        const nav = document.getElementById("nav-mobile");
+        nav.classList.remove("block");
+        nav.classList.add("hidden");
+    });
+}

@@ -19,11 +19,37 @@
         <link rel="manifest" href="/img/favicon/site.webmanifest">
     </head>
     <body class="text-grey-darkest font-light text-sm leading-medium ">
+        <div class="flex justify-center w-full z-50 bg-red-lighter">
+            <nav class="flex items-center max-w-md flex-wrap p-6 md:bg-transparent w-full">
+                <div class="flex lg:hidden justify-center w-full">
+                    <button id="nav-toggle" class="flex items-center px-3 py-2 border-2 text-white border-white hover:text-white hover:border-white">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                    </button>
+                </div>
+                <div id="nav-mobile" class="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto">
+                    <div class="md:flex text-sm md:flex-grow md:justify-between md:border-b-2 md:border-indigo">
+                        <a href="#employment" class="block mt-4 lg:inline-block lg:mt-0 text-center text-white no-underline font-semibold border-b-2 border-transparent hover:border-indigo-light uppercase md:mr-4">
+                            Employment History & Education
+                        </a>
+                        <a href="#certifications" class="block mt-4 lg:inline-block lg:mt-0 text-center text-white no-underline font-semibold border-b-2 border-transparent hover:border-indigo-light uppercase md:mr-4">
+                            Certifications
+                        </a>
+                        <a href="#projects" class="block mt-4 lg:inline-block lg:mt-0 text-center text-white no-underline font-semibold border-b-2 border-transparent hover:border-indigo-light uppercase md:mr-4">
+                            Projects
+                        </a>
+                        <a href="#community" class="block mt-4 lg:inline-block lg:mt-0 text-center text-white no-underline font-semibold border-b-2 border-transparent hover:border-indigo-light uppercase">
+                            Community
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
         <div class="hidden md:flex z-40 pin-t pin-l ml-1 mt-1 fixed bg-black text-xs font-semibold uppercase py-1 px-2 download-shadow ">
             <a class="text-white hover:text-indigo-lighter no-underline flex items-center leading-none py-1" href="Aydin-Hassan-CV.pdf" download><i class="fas fa-arrow-alt-circle-down h-4 mr-1"></i>Download my CV</a>
         </div>
         <div class="flex flex-col font-sans">
-            <div class="flex flex-col w-full justify-between items-center pin-t px-3 pt-8 bg-red-lighter">
+            <div class="flex flex-col w-full justify-between items-center pin-t px-3 md:pt-8 bg-red-lighter">
                 <div class="flex flex-col w-full max-w-md md:w-full">
                     <h1 class="font-semibold uppercase text-center text-grey-darkest text-4xl md:text-5xl tracking-wide leading-normal mb-4">Aydin Hassan</h1>
                     <ul class="list-reset flex flex-wrap justify-center text-xs font-bold uppercase mt-4 mb-8">
@@ -98,7 +124,7 @@
             </div>
             <div class="flex flex-col w-full justify-between flex-grow items-center px-3" style="background-color: #bddcff;">
                 <div class="flex flex-col w-full max-w-md md:w-full">
-                    <h2 class="font-semibold tracking-wide leading-tight uppercase text-grey-lightest text-center text-xl md:text-3xl mt-8 mb-4">Employment History & Education</h2>
+                    <h2 id="employment" class="font-semibold tracking-wide leading-tight uppercase text-grey-lightest text-center text-xl md:text-3xl mt-8 mb-4">Employment History & Education</h2>
                     <div class="bg-white border-4 border-indigo my-shadow w-full px-4 pt-5 my-2">
                         <div class="flex flex-col justify-center bg-grey-lightest -mx-4 -mt-5 relative">
                             <h3 class="font-semibold text-indigo-dark text-center mt-4 mb-4 pr-4 uppercase text-base">Senior Developer</h3>
@@ -191,7 +217,7 @@
                             <p class="mb-4 leading-loose">I won this award due to my consistently high grades and hard work.</p>
                         </div>
                     </div>
-                    <h2 class="font-semibold tracking-wide leading-tight uppercase text-grey-lightest text-center text-xl md:text-3xl mt-8 mb-4">Certifications</h2>
+                    <h2 id="certifications" class="font-semibold tracking-wide leading-tight uppercase text-grey-lightest text-center text-xl md:text-3xl mt-8 mb-4">Certifications</h2>
                     <div class="bg-white border-4 border-indigo my-shadow w-full px-4 pt-4 my-2">
                         <div class="flex flex-col justify-center bg-grey-lightest -mx-4 -mt-4 relative">
                             <h3 class="font-semibold text-indigo-dark text-center mt-4 mb-4 uppercase text-base">Magento Developer Plus</h3>
@@ -203,7 +229,7 @@
                             <p class="mb-4 leading-normal italic text-xs p-2">Demonstrates skillful use of Magento Enterprise Edition and has proven knowledge of the details of the structure of Magento, which can give someone an advantage when implementing a site using Magento.</p>
                                       </div>
                     </div>
-                    <h2 class="font-semibold tracking-wide leading-tight uppercase text-grey-lightest text-center text-xl md:text-3xl mt-8 mb-4">Projects</h2>
+                    <h2 id="projects" class="font-semibold tracking-wide leading-tight uppercase text-grey-lightest text-center text-xl md:text-3xl mt-8 mb-4">Projects</h2>
                     <div class="bg-white border-4 border-indigo my-shadow w-full px-4 pt-4 my-2">
                         <div class="flex flex-col justify-center bg-grey-lightest -mx-4 -mt-4 pt-2 relative">
                             <h3 class="font-semibold text-indigo-dark text-center mt-4 mb-4 uppercase text-base">PHP School</h3>
@@ -273,7 +299,7 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="font-semibold tracking-wide leading-tight uppercase text-grey-lightest text-center text-xl md:text-3xl mt-8 mb-4">Community</h2>
+                    <h2 id="community" class="font-semibold tracking-wide leading-tight uppercase text-grey-lightest text-center text-xl md:text-3xl mt-8 mb-4">Community</h2>
                     <div class="bg-white border-4 border-indigo my-shadow w-full px-4 pt-4 my-2">
                         <div class="flex flex-col justify-center bg-grey-lightest -mx-4 -mt-4 pt-2 relative">
                             <h3 class="font-semibold text-indigo-dark text-center mt-4 mb-4 uppercase text-base">Open Source</h3>
