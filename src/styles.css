@@ -202,3 +202,12 @@
     @apply text-indigo;
 }
 
+.open-close-tab {
+    @apply border border-indigo-dark text-indigo-dark;
+    @apply p-1 w-5 h-5 shadow-black-3px cursor-pointer;
+}
+
+.open-close-tab:hover {
+    @apply text-indigo-light border-indigo-light;
+}
+

@@ -7,6 +7,7 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
 import { faFlickr } from "@fortawesome/free-brands-svg-icons/faFlickr";
 import { faCalendarDay } from "@fortawesome/free-solid-svg-icons/faCalendarDay";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons/faChevronUp";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons/faCodeBranch";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import { faArrowAltCircleDown } from "@fortawesome/free-solid-svg-icons/faArrowAltCircleDown";
@@ -18,7 +19,7 @@ config.autoAddCss = false;
 
 library.add(
     faTwitter, faGithub, faLinkedinIn, faFlickr, faCalendarDay,
-    faChevronDown, faCodeBranch, faEnvelope, faCheckCircle, faArrowAltCircleDown,
+    faChevronDown, faChevronUp, faCodeBranch, faEnvelope, faCheckCircle, faArrowAltCircleDown,
     faWrench, faHandshake
 );
 dom.watch();
@@ -51,8 +52,12 @@ for(let el of hideButtons) {
 
         if (section.classList.contains('active')) {
             section.classList.remove('active');
+            el.querySelector('.fa-chevron-up').classList.add('hidden');
+            el.querySelector('.fa-chevron-down').classList.remove('hidden');
         } else {
             section.classList.add('active');
+            el.querySelector('.fa-chevron-down').classList.add('hidden');
+            el.querySelector('.fa-chevron-up').classList.remove('hidden');
         }
     });
 }
