@@ -30,6 +30,9 @@ const plugins = [
 
 module.exports = {
     entry: './src/index.js',
+    output: {
+        filename: '[name].[contenthash].js',
+    },
     mode: process.env.NODE_ENV,
     module: {
         rules: [
