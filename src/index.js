@@ -173,3 +173,8 @@ for (let navLink of navLinks) {
         nav.classList.add("hidden");
     });
 }
+
+const openSourceLink = document.getElementById('open-source-link');
+openSourceLink.addEventListener("click", e => {
+    document.getElementById('section-open-source').classList.add('active');
+});
