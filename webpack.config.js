@@ -1,5 +1,5 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const PurgecssPlugin = require("purgecss-webpack-plugin");
@@ -18,16 +18,6 @@ function noop() {
     return () => {};
 }
 
-const plugins = [
-    new ExtractTextPlugin('styles.css', {
-        disable: process.env.NODE_ENV === 'development',
-    }),
-    new HtmlWebpackPlugin({
-        filename: 'index.html',
-        template: 'src/index.html',
-    }),
-];
-
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -38,13 +28,11 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        { loader: 'css-loader', options: { importLoaders: 1 } },
-                        'postcss-loader',
-                    ],
-                }),
+                use: [
+                    isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader',
+                ],
             },
             {
                 test: /.*\.(gif|png|jpe?g|svg|pdf)$/i,
@@ -69,8 +57,8 @@ module.exports = {
     plugins: [
         isDev ? noop() : new CleanWebpackPlugin(['dist']),
         new CopyWebpackPlugin([{ from: 'src/Aydin-Hassan-CV.pdf', to: 'Aydin-Hassan-CV.pdf'}]),
-        new ExtractTextPlugin('styles.css', {
-            disable: process.env.NODE_ENV === 'development',
+        new MiniCssExtractPlugin({
+            filename: "style.[contenthash].css",
         }),
         isDev ? noop() : new PurgecssPlugin({
             paths: glob.sync([path.join(__dirname, "./src/*.html")]),
