@@ -79,7 +79,10 @@ module.exports = {
                     extractor: TailwindExtractor,
                     extensions: ["html", "js"]
                 }
-            ]
+            ],
+            whitelist: () => {
+                return ['back-to-top--show', 'back-to-top--fade-out']
+            }
         }),
         new HtmlWebpackPlugin({
             template: 'src/index.html',
