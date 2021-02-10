@@ -1,1 +1,1 @@
-role :web, %w{aydin@188.226.155.116}
+role :web, %w{aydin@personal}
