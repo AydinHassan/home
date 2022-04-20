@@ -24,23 +24,29 @@ library.add(
 );
 dom.watch();
 
-const tabLinks = document.querySelectorAll(".tabs a");
-const tabPanels = document.querySelectorAll(".tabs-panel");
+const tabs = document.querySelectorAll(".tab");
 
-for(let el of tabLinks) {
-    el.addEventListener("click", e => {
-        e.preventDefault();
-        document.querySelector('.tabs li.active').classList.remove("active");
-        document.querySelector('.tabs-panel.active').classList.remove("active");
+for(let tab of tabs) {
+    let tabLinks = tab.querySelectorAll(".tabs a");
+    let tabPanels = tab.querySelectorAll(".tabs-panel");
 
-        const parentListItem = el.parentElement;
+    for (let el of tabLinks) {
+        el.addEventListener("click", e => {
+            e.preventDefault();
 
-        parentListItem.classList.add("active");
-        const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
+            const parentListItem = el.parentElement;
+            const tabParent = parentListItem.parentElement.parentElement;
 
-        const panel = [...tabPanels].filter(el => el.getAttribute("data-index") == index);
-        panel[0].classList.add("active");
-    });
+            tabParent.querySelector('.tabs li.active').classList.remove("active");
+            tabParent.querySelector('.tabs-panel.active').classList.remove("active");
+
+            parentListItem.classList.add("active");
+            const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
+
+            const panel = [...tabPanels].filter(el => el.getAttribute("data-index") == index);
+            panel[0].classList.add("active");
+        });
+    }
 }
 
 const hideButtons = document.querySelectorAll(".hide-section");
@@ -158,7 +164,6 @@ navToggle.addEventListener("click", e => {
         nav.classList.add("hidden");
         navEl.classList.remove("bg-indigo", "mb-4");
     } else {
-        console.log("here");
         nav.classList.remove("hidden");
         nav.classList.add("block");
         navEl.classList.add("bg-indigo", "mb-4");
