@@ -14,13 +14,14 @@ import { faArrowAltCircleDown } from "@fortawesome/free-solid-svg-icons/faArrowA
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons/faCheckCircle";
 import { faHandshake } from "@fortawesome/free-regular-svg-icons/faHandshake";
 import { faWrench } from "@fortawesome/free-solid-svg-icons/faWrench";
+import { faCamera } from "@fortawesome/free-solid-svg-icons/faCamera";
 
 config.autoAddCss = false;
 
 library.add(
     faTwitter, faGithub, faLinkedinIn, faFlickr, faCalendarDay,
     faChevronDown, faChevronUp, faCodeBranch, faEnvelope, faCheckCircle, faArrowAltCircleDown,
-    faWrench, faHandshake
+    faWrench, faHandshake, faCamera
 );
 dom.watch();
 
