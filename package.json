@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "cross-env NODE_ENV=development NODE_OPTIONS=--openssl-legacy-provider  webpack-dev-server",
-    "build": "cross-env NODE_ENV=production webpack --no-progress"
+    "build": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider webpack --no-progress"
   },
   "dependencies": {},
   "devDependencies": {
