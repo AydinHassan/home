@@ -8,5 +8,5 @@
 $ git clone git@github.com:AydinHassan/home.git
 $ cd home
 $ npm install
-$ npm start
+$ npm dev
 ```

@@ -1,4 +1,4 @@
-import './styles.css';
+import './styles.css'
 
 import { library, dom, config } from "@fortawesome/fontawesome-svg-core";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
@@ -95,7 +95,7 @@ skillSetSummaryShowButton.addEventListener("click", e => {
     document.getElementById('skill-set-summary-modal').classList.add('active');
 });
 
-const backTop = document.querySelector('.back-to-top');
+const backTop = document.querySelector('#back-to-top');
 const offset = 300;
 const scrollDuration = 700;
 const windowTop = window.scrollY || document.documentElement.scrollTop;
@@ -123,7 +123,7 @@ function checkBackToTop() {
     if (windowTop > offset) {
         backTop.classList.add('back-to-top--show');
     } else {
-        backTop.classList.remove( 'back-to-top--show', 'back-to-top--fade-out');
+        backTop.classList.remove( 'back-to-top--show');
     }
 
     scrolling = false;
@@ -163,11 +163,11 @@ navToggle.addEventListener("click", e => {
     if (nav.classList.contains("block")) {
         nav.classList.remove("block");
         nav.classList.add("hidden");
-        navEl.classList.remove("bg-indigo", "mb-4");
+        navEl.classList.remove("bg-indigo-500", "mb-4");
     } else {
         nav.classList.remove("hidden");
         nav.classList.add("block");
-        navEl.classList.add("bg-indigo", "mb-4");
+        navEl.classList.add("bg-indigo-500", "mb-4");
     }x
 });
 
