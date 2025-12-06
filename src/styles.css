@@ -194,6 +194,11 @@
     @apply bg-gradient-to-b from-transparent from-80% via-indigo-200 to-indigo-300;
 }
 
+.project-link {
+    @apply text-indigo-400 no-underline;
+    @apply bg-gradient-to-b from-transparent from-80% via-indigo-200 to-indigo-300;
+}
+
 .text-link:hover {
     @apply bg-gradient-to-b from-transparent from-80% via-indigo-300 to-indigo-400;
 }
