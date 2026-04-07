@@ -15,7 +15,7 @@
     "glhd-tailwindcss-transitions": "^0.3.0",
     "glob-all": "^3.2.1",
     "tailwindcss": "^4.0.6",
-    "vite": "^6.3.4"
+    "vite": "^6.4.2"
   },
   "repository": {
     "type": "git",
