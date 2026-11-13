@@ -8,14 +8,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4",
-    "@fortawesome/free-brands-svg-icons": "^6.4",
-    "@fortawesome/free-regular-svg-icons": "^6.4",
-    "@fortawesome/free-solid-svg-icons": "^6.4",
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-brands-svg-icons": "^7.3.1",
+    "@fortawesome/free-regular-svg-icons": "^7.3.1",
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
     "glhd-tailwindcss-transitions": "^0.3.0",
     "glob-all": "^3.2.1",
     "tailwindcss": "^4.0.6",
-    "vite": "^6.3.4"
+    "vite": "^8.3.8"
   },
   "repository": {
     "type": "git",
